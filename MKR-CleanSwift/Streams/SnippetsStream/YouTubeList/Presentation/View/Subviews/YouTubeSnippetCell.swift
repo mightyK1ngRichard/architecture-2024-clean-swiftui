@@ -84,7 +84,7 @@ private extension YouTubeSnippetCell {
 
 extension YouTubeSnippetCell {
 
-    struct Configuration: Hashable {
+    struct Configuration: Hashable, Equatable {
         let title: String
         let imageState: ImageState
     }
