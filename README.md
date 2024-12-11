@@ -16,12 +16,12 @@ Clean SwiftUI — это архитектурный подход для разр
 ### Использование протоколов
 Для упрощения зависимости между слоями и повышения тестируемости используются протоколы:
 
-#### Первая реализация(См. Stream/Snippets):
+#### Первая реализация (См. Stream/Snippets):
 -	DisplayLogic — определяет взаимодействие Presenter и ViewModel.
 -	BusinessLogic — определяет взаимодействие ViewModel и Interactor.
 -	PresentationLogic — определяет взаимодействие Interactor и Presenter.
 
-#### Вторая реализация(См. Stream/Profile):
+#### Вторая реализация (См. Stream/Profile):
 ```swift
 // MARK: - ViewModel
 protocol ViewDisplayLogic: ViewDisplayLogicOutput {}
@@ -30,7 +30,7 @@ protocol ViewDisplayLogicOutput: AnyObject {}
 // MARK: - Input
 protocol ViewInteractorInput: AnyObject {}
 // MARK: - Presenter
-protocol ProfilePresenterInput: AnyObject {}
+protocol ViewPresenterInput: AnyObject {}
 ```
 
 ### Работа с сетью
